@@ -17,6 +17,7 @@
 export { ApiBlueprint } from './ApiBlueprint';
 export { AppRootElementBlueprint } from './AppRootElementBlueprint';
 export { AppRootWrapperBlueprint } from './AppRootWrapperBlueprint';
+export { ElementBlueprint } from './ElementBlueprint';
 export { IconBundleBlueprint } from './IconBundleBlueprint';
 export { NavItemBlueprint } from './NavItemBlueprint';
 export { NavLogoBlueprint } from './NavLogoBlueprint';

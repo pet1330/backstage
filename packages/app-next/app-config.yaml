@@ -45,6 +45,10 @@ app:
 
     - entity-content:kubernetes/kubernetes
 
+    - element:techdocs/entity-content-empty-state:
+        config:
+          message: No docs available for this component.
+
   # scmAuthExtension: >-
   #   createScmAuthExtension({
   #     id: 'apis.scmAuth.addons.ghe',

@@ -1172,6 +1172,21 @@ export { DiscoveryApi };
 
 export { discoveryApiRef };
 
+// @public
+export const ElementBlueprint: ExtensionBlueprint<
+  'element',
+  undefined,
+  undefined,
+  {
+    loader: () => Promise<JSX.Element>;
+  },
+  ConfigurableExtensionDataRef<React_2.JSX.Element, 'core.reactElement', {}>,
+  {},
+  {},
+  {},
+  never
+>;
+
 export { ErrorApi };
 
 export { ErrorApiError };

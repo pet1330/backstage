@@ -121,11 +121,15 @@ const _default: BackstagePlugin<
     >;
     'entity-content:techdocs': ExtensionDefinition<
       {
+        [x: string]: any;
+      } & {
         path: string | undefined;
         title: string | undefined;
         filter: string | undefined;
       },
       {
+        [x: string]: any;
+      } & {
         filter?: string | undefined;
         title?: string | undefined;
         path?: string | undefined;
@@ -158,14 +162,50 @@ const _default: BackstagePlugin<
             optional: true;
           }
         >,
-      {},
+      {
+        emptyState: ExtensionInput<
+          ConfigurableExtensionDataRef<
+            React_2.JSX.Element,
+            'core.reactElement',
+            {}
+          >,
+          {
+            singleton: true;
+            optional: true;
+          }
+        >;
+      },
       'entity-content',
       undefined,
       undefined
     >;
+    'element:techdocs/entity-content-empty-state': ExtensionDefinition<
+      {},
+      {},
+      ConfigurableExtensionDataRef<
+        React_2.JSX.Element,
+        'core.reactElement',
+        {}
+      >,
+      {},
+      'element',
+      'techdocs',
+      'entity-content-empty-state'
+    >;
   }
 >;
 export default _default;
+
+// @alpha (undocumented)
+export const TechDocsEntityContentEmptyState: ExtensionDefinition<
+  {},
+  {},
+  ConfigurableExtensionDataRef<React_2.JSX.Element, 'core.reactElement', {}>,
+  {},
+  'element',
+  'techdocs',
+  'entity-content-empty-state'
+>;
 
 // @alpha (undocumented)
 export const techDocsSearchResultListItemExtension: ExtensionDefinition<

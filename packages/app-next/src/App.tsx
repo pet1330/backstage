@@ -105,6 +105,23 @@ const scmIntegrationApi = ApiBlueprint.make({
   },
 });
 
+const techDocsEntityContentEmptyState = techdocsPlugin
+  .getExtension('element:techdocs/entity-content-empty-state')
+  .override({
+    config: {
+      schema: {
+        message: z => z.string().optional(),
+      },
+    },
+    // TODO(mtlewis) does this get wrapped by the original factory
+    // somehow? Doesn't seem to be possible to override `loader`.
+    factory: (_, context) => [
+      coreExtensionData.reactElement(
+        <div>{context.config.message ?? 'No docs content found!'}</div>,
+      ),
+    ],
+  });
+
 const collectedLegacyPlugins = convertLegacyApp(
   <FlatRoutes>
     <Route path="/catalog-import" element={<CatalogImportPage />} />
@@ -127,6 +144,7 @@ const app = createApp({
         scmAuthExtension,
         scmIntegrationApi,
         notFoundErrorPage,
+        techDocsEntityContentEmptyState,
       ],
     }),
   ],
