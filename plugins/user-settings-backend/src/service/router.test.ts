@@ -23,6 +23,8 @@ import request from 'supertest';
 import { UserSettingsStore } from '../database/UserSettingsStore';
 import { createRouterInternal } from './router';
 import { SignalsService } from '@backstage/plugin-signals-node';
+import { mockServices } from '@backstage/backend-test-utils';
+import { MiddlewareFactory } from '@backstage/backend-defaults/rootHttpRouter';
 
 describe('createRouter', () => {
   const userSettingsStore: jest.Mocked<UserSettingsStore> = {
@@ -50,7 +52,12 @@ describe('createRouter', () => {
       signals: signalService as SignalsService,
     });
 
-    app = express().use(router);
+    const errorHandler = MiddlewareFactory.create({
+      config: mockServices.rootConfig(),
+      logger: mockServices.rootLogger(),
+    }).error();
+
+    app = express().use(router).use(errorHandler);
   });
 
   afterEach(() => {
