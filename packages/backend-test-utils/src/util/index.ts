@@ -14,4 +14,5 @@
  * limitations under the License.
  */
 
+export { errorHandlerMock } from './errorHandler';
 export { isDockerDisabledForTests } from './isDockerDisabledForTests';

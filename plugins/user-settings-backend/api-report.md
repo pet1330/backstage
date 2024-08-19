@@ -5,7 +5,7 @@
 ```ts
 import { DatabaseService } from '@backstage/backend-plugin-api';
 import express from 'express';
-import { IdentityApi } from '@backstage/plugin-auth-node';
+import { IdentityService } from '@backstage/backend-plugin-api';
 import { SignalsService } from '@backstage/plugin-signals-node';
 
 // @public @deprecated
@@ -14,7 +14,7 @@ export function createRouter(options: RouterOptions): Promise<express.Router>;
 // @public @deprecated
 export type RouterOptions = {
   database: DatabaseService;
-  identity: IdentityApi;
+  identity: IdentityService;
   signals?: SignalsService;
 };
 

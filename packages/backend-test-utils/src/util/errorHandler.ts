@@ -1,5 +1,5 @@
 /*
- * Copyright 2020 The Backstage Authors
+ * Copyright 2024 The Backstage Authors
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,15 +14,14 @@
  * limitations under the License.
  */
 
-/**
- * Test helpers library for Backstage backends
- *
- * @packageDocumentation
- */
+import { MiddlewareFactory } from '@backstage/backend-defaults/rootHttpRouter';
+import { mockServices } from '../next';
 
-export * from './cache';
-export * from './database';
-export * from './msw';
-export * from './filesystem';
-export * from './next';
-export { errorHandlerMock } from './util';
+/**
+ * A mock for error handler middleware that can be used in router tests.
+ * @public
+ */
+export const errorHandlerMock = MiddlewareFactory.create({
+  config: mockServices.rootConfig(),
+  logger: mockServices.rootLogger(),
+}).error();
