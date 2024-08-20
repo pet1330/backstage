@@ -1,5 +1,13 @@
 # @backstage/plugin-devtools
 
+## 0.1.18
+
+### Patch Changes
+
+- Updated dependencies
+  - @backstage/frontend-plugin-api@0.8.0
+  - @backstage/core-compat-api@0.2.9
+
 ## 0.1.17
 
 ### Patch Changes

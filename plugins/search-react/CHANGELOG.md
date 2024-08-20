@@ -1,5 +1,13 @@
 # @backstage/plugin-search-react
 
+## 1.7.15
+
+### Patch Changes
+
+- 5446061: The `/alpha` export no longer export extension creators for the new frontend system, existing usage should be switched to use the equivalent extension blueprint instead. For more information see the [new frontend system 1.30 migration documentation](https://backstage.io/docs/frontend-system/architecture/migrations#130).
+- Updated dependencies
+  - @backstage/frontend-plugin-api@0.8.0
+
 ## 1.7.14
 
 ### Patch Changes

@@ -1,5 +1,14 @@
 # @backstage/plugin-search-backend-module-pg
 
+## 0.5.34
+
+### Patch Changes
+
+- Updated dependencies
+  - @backstage/plugin-search-backend-node@1.3.1
+  - @backstage/backend-common@0.24.0
+  - @backstage/backend-plugin-api@0.8.0
+
 ## 0.5.33
 
 ### Patch Changes

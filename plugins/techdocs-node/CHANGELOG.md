@@ -1,5 +1,14 @@
 # @backstage/plugin-techdocs-node
 
+## 1.12.10
+
+### Patch Changes
+
+- 4417dd4: Fix typo and unify TechDocs casing in doc strings
+- Updated dependencies
+  - @backstage/backend-common@0.24.0
+  - @backstage/backend-plugin-api@0.8.0
+
 ## 1.12.9
 
 ### Patch Changes

@@ -1,5 +1,13 @@
 # @backstage/frontend-app-api
 
+## 0.8.1
+
+### Patch Changes
+
+- 5446061: Internal refactor following removal of v1 extension support. The app implementation itself still supports v1 extensions at runtime.
+- Updated dependencies
+  - @backstage/frontend-plugin-api@0.8.0
+
 ## 0.8.0
 
 ### Minor Changes

@@ -1,5 +1,16 @@
 # @backstage/plugin-techdocs-backend
 
+## 1.10.12
+
+### Patch Changes
+
+- 086c32d: Dedicated token for techdocs cache sync
+- Updated dependencies
+  - @backstage/plugin-techdocs-node@1.12.10
+  - @backstage/plugin-search-backend-module-techdocs@0.2.1
+  - @backstage/backend-common@0.24.0
+  - @backstage/backend-plugin-api@0.8.0
+
 ## 1.10.10
 
 ### Patch Changes

@@ -1,5 +1,36 @@
 # example-app-next
 
+## 0.0.15
+
+### Patch Changes
+
+- Updated dependencies
+  - @backstage/frontend-plugin-api@0.8.0
+  - @backstage/plugin-catalog-react@1.12.4
+  - @backstage/plugin-search-react@1.7.15
+  - @backstage/plugin-catalog@1.22.1
+  - @backstage/frontend-app-api@0.8.1
+  - @backstage/core-compat-api@0.2.9
+  - @backstage/plugin-api-docs@0.11.9
+  - @backstage/plugin-app-visualizer@0.1.10
+  - @backstage/plugin-catalog-graph@0.4.9
+  - @backstage/plugin-catalog-import@0.12.3
+  - @backstage/plugin-home@0.7.10
+  - @backstage/plugin-kubernetes@0.11.14
+  - @backstage/plugin-org@0.6.29
+  - @backstage/plugin-scaffolder@1.24.1
+  - @backstage/plugin-search@1.4.16
+  - @backstage/plugin-techdocs@1.10.9
+  - @backstage/plugin-user-settings@0.8.12
+  - @backstage/plugin-kubernetes-cluster@0.0.15
+  - @backstage/plugin-scaffolder-react@1.11.1
+  - @backstage/cli@0.27.0
+  - @backstage/integration-react@1.1.30
+  - @backstage/plugin-catalog-unprocessed-entities@0.2.7
+  - @backstage/plugin-notifications@0.3.0
+  - @backstage/plugin-signals@0.0.9
+  - @backstage/plugin-techdocs-module-addons-contrib@1.1.13
+
 ## 0.0.14
 
 ### Patch Changes

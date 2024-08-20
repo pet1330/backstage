@@ -1,5 +1,12 @@
 # @backstage/core-compat-api
 
+## 0.2.9
+
+### Patch Changes
+
+- Updated dependencies
+  - @backstage/frontend-plugin-api@0.8.0
+
 ## 0.2.8
 
 ### Patch Changes

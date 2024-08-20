@@ -1,5 +1,17 @@
 # @backstage/plugin-catalog
 
+## 1.22.1
+
+### Patch Changes
+
+- 5446061: The `/alpha` export no longer export extension creators for the new frontend system, existing usage should be switched to use the equivalent extension blueprint instead. For more information see the [new frontend system 1.30 migration documentation](https://backstage.io/docs/frontend-system/architecture/migrations#130).
+- Updated dependencies
+  - @backstage/frontend-plugin-api@0.8.0
+  - @backstage/plugin-catalog-react@1.12.4
+  - @backstage/plugin-search-react@1.7.15
+  - @backstage/core-compat-api@0.2.9
+  - @backstage/integration-react@1.1.30
+
 ## 1.22.0
 
 ### Minor Changes

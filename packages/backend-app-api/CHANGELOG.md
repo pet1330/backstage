@@ -1,5 +1,18 @@
 # @backstage/backend-app-api
 
+## 0.9.2
+
+### Patch Changes
+
+- 7f779c7: `auth.externalAccess` should be optional in the config schema
+- Updated dependencies
+  - @backstage/backend-common@0.24.0
+  - @backstage/backend-plugin-api@0.8.0
+  - @backstage/cli-node@0.2.7
+  - @backstage/config-loader@1.9.0
+  - @backstage/plugin-auth-node@0.5.0
+  - @backstage/plugin-permission-node@0.8.1
+
 ## 0.9.0
 
 ### Minor Changes
